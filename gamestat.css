@@ -1,0 +1,308 @@
+html body {
+    background-color: #41424C;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.nav {
+    height: 45px;
+    background-color: #4d4e59;
+    margin: 0;
+    padding: 10px;
+}
+
+:root {
+    --ATL: #e03a3e;
+    --BOS: #007a33;
+    --BKN: #000000;
+    --CHA: #2c0c67;
+    --CHI: #d40007;
+    --CLE: #860038;
+    --DAL: #00538c;
+    --DEN: #0e2240;
+    --DET: #c8102e;
+    --GSW: #ffc72c;
+    --HOU: #ff0040;
+    --IND: #002d62;
+    --LAC: #bec0c2;
+    --LAL: #552583;
+    --MEM: #5d76a9;
+    --MIA: #98002e;
+    --MIL: #00471b;
+    --MIN: #0c2340;
+    --NOP: #85714d;
+    --NYK: #ff8522;
+    --OKC: #007ac1;
+    --ORL: #0077c0;
+    --PHI: #006bb6;
+    --PHX: #e56020;
+    --POR: #e03a3e;
+    --SAC: #5a2d81;
+    --SAS: #c4ced4;
+    --TOR: #780000;
+    --UTA: #00471b;
+    --WAS: #c4ced4;
+}
+
+.main {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.button {
+    border: 3px gray solid;
+    background-color: rgb(198, 198, 198);
+    width: 140px;
+    justify-content: center;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.title-box {
+    margin: 5px;
+    margin-top: -50px;
+    width: 290px;
+    position: absolute;
+    margin-left: 779px;
+    background-color: rgb(42, 42, 42);
+    border-radius: 10px;
+    height: 55px;
+}
+
+.title-box p {
+    color: white;
+    font-family: Helvetica;
+}
+
+.title-box .big {
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 10px;
+    position: absolute;
+    font-size: 40px;
+}
+
+.title-box .tiny {
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 190px;
+    font-size: 12px;
+}
+
+.banner {
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    background-color: black;
+    border: 5px gray solid;
+    border-radius: 35px;
+    margin-top: 10px;
+}
+
+.game-side {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    padding: 0;
+}
+
+.game-team {
+    transition: 0.3s all;
+}
+
+.selected {
+    box-shadow: 0 0 50px 1px black;
+}
+
+.hover-selected {
+    box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.3);
+}
+
+.game-score {
+    font-size: 35px;
+    font-family: Arial;
+    font-weight: 1000;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.team-name {
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: 1000;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.game-side-visitor {
+    width: 30%;
+    float: left;
+}
+
+.vs {
+    margin-top: 140px;
+    font-size: 100px;
+    font-family: Arial;
+    font-weight: 1000;
+    color: white;
+    -webkit-text-stroke: 3px black;
+}
+
+.game-side-home {
+    width: 30%;
+    float: right;
+}
+
+.banner::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.game-side img {
+    width: 300px;
+    transition: 0.3s all;
+}
+
+.game-side img:hover {
+    transform: scale(1.1);
+}
+
+
+.live-box {
+    color: white;
+    font-family: Arial;
+    background-image: linear-gradient(to right, red, rgb(166, 0, 0));
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: -40px;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+.game-stats {
+    background-color: rgb(198, 198, 198);
+    border: 3px gray solid;
+    border-radius: 35px;
+    overflow: hidden;
+    font-weight: 600;
+    transition: .3s all;
+}
+
+.game-stats-title {
+    font-family: Arial;
+    font-size: 75px;
+    color: white;
+    font-weight: 700;
+    -webkit-text-stroke: 3px black;
+    text-align: center;
+}
+
+.stats-key-row {
+    display: flex;
+}
+
+.key-name {
+    display: flex;
+    width: 500px;
+    margin-right: 50px;
+    margin-left: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.key-name p {
+    margin-right: 230px;
+}
+
+.key-stats {
+    display: flex;
+    width: 1200px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.key-stats p {
+    width: 160px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 25px;
+
+}
+
+.player-row {
+    display: flex;
+}
+
+.player-row-main {
+    width: 630px;
+    margin-right: 10px;
+    text-align: center;
+    display: flex;
+}
+
+.player-headshot {
+    width: 156px;
+    height: 114px;
+    border: none;
+}
+
+.no-headshot {
+    width: 180px;
+    background-color: rgb(57, 57, 57);
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.no-headshot p {
+    margin-top: 38px;
+    font-size: 25px;
+    color: rgb(230, 230, 230);
+}
+
+.player-name {
+    font-size: 30px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+
+.player-stats {
+    display: flex;
+    width: 1210px;
+}
+
+.player-stats p {
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 70px;
+}
+
+.game-middle img {
+    margin-top: -60px;
+    width: 50px;
+}
+
+.button {
+    transition: 0.3s all;
+}
+
+.button:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+.hidden {
+    opacity: none;
+}

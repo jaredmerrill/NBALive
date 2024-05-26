@@ -1,0 +1,337 @@
+html body {
+    margin: 0;
+    padding: 0;
+    background-color: #41424C;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.nav {
+    height: 65px;
+    background-color: #4d4e59;
+    z-index: 3;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+
+
+
+.active-game-date {
+    border: 3px gray solid;
+    background-color: rgb(198, 198, 198);
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 140px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    padding: 10px;
+    transition: 0.5s all;
+}
+
+.active-game-date:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.arrow {
+    color: rgb(126, 126, 126);
+}
+
+.game-date-contents {
+    display: none;
+    border-top: 3px gray solid;
+    border-left: 3px gray solid;
+    border-right: 3px gray solid;
+    background-color: rgb(198, 198, 198);
+    margin-left: 10px;
+    width: 160px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    position: absolute;
+    z-index: 2;
+}
+
+.date-contents {
+    border-bottom: 3px gray solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(198, 198, 198);
+}
+
+.date-contents-input {
+    background-color: rgb(198, 198, 198);
+    border: 0;
+    height: 30px;
+    width: 160px;
+    text-align: center;
+    border-bottom: 3px gray solid;
+}
+
+.date-contents-input:focus {
+    outline: none;
+}
+
+
+
+
+
+
+.active-team {
+    border: 3px gray solid;
+    background-color: rgb(198, 198, 198);
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 202.8px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    padding: 10px;
+    transition: 0.5s all;
+}
+
+.active-team:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.all-team-contents {
+    display: none;
+    border-bottom: 3px gray solid;
+    border-right: 3px gray solid;
+    border-left: 3px gray solid;
+    background-color: rgb(198, 198, 198);
+    margin-left: 50px;
+    width: 222.8px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    position: absolute;
+    z-index: 2;
+}
+
+.team-contents {
+    border-top: 3px gray solid;
+    padding: 0;
+    height: 65px;
+}
+
+.all-teams-content {
+    padding: 10px;
+}
+
+.inner {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.inner img {
+    width: 67px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.inner-seperator {
+    height: 65px;
+    border: 1px solid gray;
+}
+
+
+
+.error-box {
+    background-color: rgb(44, 44, 44);
+    border-radius: 5px;
+    color: white;
+    font-family: Helvetica;
+    position: absolute;
+    transition: 0.75s all;
+    z-index: -2;
+    width: 100%;
+    height: 30px;
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+.title-box {
+    margin: 5px;
+    width: 290px;
+    position: absolute;
+    margin-left: 330px;
+    background-color: rgb(42, 42, 42);
+    border-radius: 10px;
+    height: 55px;
+}
+
+.title-box p {
+    color: white;
+    font-family: Helvetica;
+}
+
+.title-box .big {
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 10px;
+    position: absolute;
+    font-size: 40px;
+}
+
+.title-box .tiny {
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 190px;
+    font-size: 12px;
+}
+
+.games {
+    text-align: center;
+    width: 100%;
+}
+
+.game-img {
+    width: 150px;
+    transition: 0.3s all;
+}
+
+.game-img:hover {
+    transform: scale(1.1);
+}
+
+.game-display {
+    position: relative;
+    display: inline-block;
+    flex-wrap: wrap;
+    border: 3px gray solid;
+    background-color: rgb(198, 198, 198);
+    border-radius: 20px;
+    width: 400px;
+    height: 220px;
+    margin: 10px;
+    transition: 0.4s all;
+}
+
+
+
+.winner {
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+    transition: 0.4s all;
+}
+
+.game-side {
+    position: relative;
+    margin: 2px;
+    display: inline-block;
+    width: auto;
+}
+
+.game-side-visitor {
+    float: left;
+}
+
+.game-side-home {
+    float: right;
+}
+
+
+.game-score {
+    text-align: center;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+
+.hidden {
+    opacity: 0;
+}
+
+.superhidden {
+    display: none;
+}
+
+
+
+.game-status {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin: 5;
+    font-family: Helvetica;
+    color: gray;
+    font-weight: 600;
+}
+
+.live-date-section {
+    position: absolute;
+    width: 100%;
+}
+
+.final-game-time {
+    margin-top: 20px;
+    font-family: Helvetica;
+    color: gray;
+    font-weight: 600;
+    position: absolute;
+}
+
+.live-box {
+    color: white;
+    font-family: Arial;
+    background-image: linear-gradient(to right, red, rgb(166, 0, 0));
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: 550;
+    border: 1px solid black;
+    position: absolute;
+    width: 70px;
+    margin-left: -6px;
+}
+
+.game-details {
+    justify-content: center;
+    margin-top: 130px;
+    width: auto;
+}
+
+.game-time {
+    margin-top: 20px;
+}
+
+.day-divider {
+    font-size: 55px;
+    font-family: Arial;
+    margin: 20px;
+    color: white;
+    font-weight: 700;
+    -webkit-text-stroke: 2.5px black;
+    height: 100px;
+    text-align: left;
+    transition: 0.3s all;
+}
+
+/* .day-divider:hover {
+    transform: scale(1.1);
+} */
+
+.day-divider-img {
+    width: 90px;
+    margin-bottom: -28px;
+    margin-left: 20px;
+    transition: 0.3s all;
+}
+
+.day-divider-img:hover {
+    transform: scale(1.15);
+}
+
+.no-games {
+    margin-top: 20px;
+    font-size: 90px;
+    font-family: Helvetica;
+    font-weight: 750;
+    color: white;
+    -webkit-text-stroke: 3px black;
+}

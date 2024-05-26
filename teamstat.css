@@ -1,0 +1,403 @@
+html body {
+    background-color: #41424C;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+:root {
+
+    --ATL: rgba(224, 58, 62);
+    --BOS: rgba(0, 122, 51);
+    --BKN: rgba(0, 0, 0);
+    --CHA: rgba(44, 12, 103);
+    --CHI: rgba(212, 0, 7);
+    --CLE: rgba(134, 0, 56);
+    --DAL: rgba(0, 83, 140);
+    --DEN: rgba(14, 34, 64);
+    --DET: rgba(200, 16, 46);
+    --GSW: rgba(255, 199, 44);
+    --HOU: rgba(255, 0, 64);
+    --IND: rgba(0, 45, 98);
+    --LAC: rgba(190, 192, 194);
+    --LAL: rgba(85, 37, 131);
+    --MEM: rgba(93, 118, 169);
+    --MIA: rgba(152, 0, 46);
+    --MIL: rgba(0, 71, 27);
+    --MIN: rgba(12, 35, 64);
+    --NOP: rgba(133, 113, 77);
+    --NYK: rgba(255, 133, 34);
+    --OKC: rgba(0, 122, 193);
+    --ORL: rgba(0, 119, 192);
+    --PHI: rgba(0, 107, 182);
+    --PHX: rgba(229, 96, 32);
+    --POR: rgba(224, 58, 62);
+    --SAC: rgba(90, 45, 129);
+    --SAS: rgba(196, 206, 212);
+    --TOR: rgba(120, 0, 0);
+    --UTA: rgba(0, 71, 27);
+    --WAS: rgba(196, 206, 212);
+
+
+    /* Banner Tints */
+    --ATL2: rgba(224, 58, 62, 0.5);
+    --BOS2: rgba(0, 122, 51, 0.5);
+    --BKN2: rgba(0, 0, 0, 0.5);
+    --CHA2: rgba(44, 12, 103, 0.5);
+    --CHI2: rgba(212, 0, 7, 0.5);
+    --CLE2: rgba(134, 0, 56, 0.5);
+    --DAL2: rgba(0, 83, 140, 0.5);
+    --DEN2: rgba(14, 34, 64, 0.5);
+    --DET2: rgba(200, 16, 46, 0.5);
+    --GSW2: rgba(255, 199, 44, 0.5);
+    --HOU2: rgba(255, 0, 64, 0.5);
+    --IND2: rgba(0, 45, 98, 0.5);
+    --LAC2: rgba(190, 192, 194, 0.5);
+    --LAL2: rgba(85, 37, 131, 0.5);
+    --MEM2: rgba(93, 118, 169, 0.5);
+    --MIA2: rgba(152, 0, 46, 0.5);
+    --MIL2: rgba(0, 71, 27, 0.5);
+    --MIN2: rgba(12, 35, 64, 0.5);
+    --NOP2: rgba(133, 113, 77, 0.5);
+    --NYK2: rgba(255, 133, 34, 0.5);
+    --OKC2: rgba(0, 122, 193, 0.5);
+    --ORL2: rgba(0, 119, 192, 0.5);
+    --PHI2: rgba(0, 107, 182, 0.5);
+    --PHX2: rgba(229, 96, 32, 0.5);
+    --POR2: rgba(224, 58, 62, 0.5);
+    --SAC2: rgba(90, 45, 129, 0.5);
+    --SAS2: rgba(196, 206, 212);
+    --TOR2: rgba(120, 0, 0, 0.5);
+    --UTA2: rgba(0, 71, 27, 0.5);
+    --WAS2: rgba(196, 206, 212, 0.5);
+}
+
+
+.nav {
+    width: 100%;
+    height: 45px;
+    background-color: #4d4e59;
+    margin: 0;
+    padding: 10px;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.button {
+    border: 3px gray solid;
+    background-color: rgb(198, 198, 198);
+    width: 140px;
+    justify-content: center;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    padding: 10px;
+    transition: 0.3s all;
+}
+
+.button:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+.title-box {
+    margin: 5px;
+    margin-top: -50px;
+    width: 290px;
+    position: absolute;
+    margin-left: 779px;
+    background-color: rgb(42, 42, 42);
+    border-radius: 10px;
+    height: 55px;
+}
+
+.title-box p {
+    color: white;
+    font-family: Helvetica;
+}
+
+.title-box .big {
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 10px;
+    position: absolute;
+    font-size: 40px;
+}
+
+.title-box .tiny {
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 190px;
+    font-size: 12px;
+}
+
+.main {
+    padding: 10px;
+}
+
+.banner {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+    border: 3px gray solid;
+    border-radius: 35px;
+}
+
+.banner-tint {
+    background-color: var(--BKN);
+    background-blend-mode: multiply;
+}
+
+
+.blonk {
+    height: 1000px;
+}
+
+.main-logo-box {
+    /* text-align: center; */
+    height: 600px;
+    position: absolute;
+    display: grid;
+}
+
+.main-logo {
+    width: 300px;
+}
+
+.team-name {
+    text-align: center;
+    font-size: 100px;
+    font-family: Arial;
+    font-weight: 1000;
+    color: white;
+}
+
+.roster-section {
+    text-align: center;
+}
+
+.roster-title {
+    font-family: Arial;
+    font-size: 75px;
+    color: white;
+    font-weight: 700;
+    -webkit-text-stroke: 3px black;
+    margin: 15px;
+}
+
+.player-display {
+    position: relative;
+    display: inline-block;
+    transition: 0.4s all;
+}
+
+.front-player-display {
+    position: absolute;
+    flex-wrap: flex;
+    border: 3px gray solid;
+    background-color: rgb(198, 198, 198);
+    border-radius: 20px;
+    width: 320px;
+    height: 420px;
+    margin: 10px;
+    transition: .4s all;
+}
+
+.front-player-display:hover {
+    background-color: rgb(168, 168, 168);
+}
+
+.player-headshot {
+    width: 270px;
+}
+
+.player-number {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.player-name {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.player-details {
+    margin-top: 0;
+    color: rgb(72, 72, 72);
+    text-align: left;
+    margin-left: 70px;
+}
+
+
+.no-headshot {
+    width: 180px;
+    height: 140px;
+    background-color: rgb(98, 98, 98);
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin-top: 35px;
+}
+
+.no-headshot p {
+    margin-top: 55px;
+    font-size: 30px;
+    color: rgb(230, 230, 230);
+    font-weight: 600;
+}
+
+.back-player-display {
+    position: relative;
+    z-index: -1;
+    border: 3px rgb(54, 54, 54) solid;
+    background-color: rgb(92, 92, 92);
+    border-radius: 20px;
+    width: 320px;
+    height: 420px;
+    margin: 10px;
+    text-align: right;
+    transition: .4s all;
+    display: block;
+}
+
+.player-header {
+    height: 20%;
+}
+
+.back-player-name-container {
+    margin-top: 20px;
+}
+
+.back-player-name {
+    text-align: left;
+    width: 60%;
+    margin-bottom: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 19px;
+    font-weight: 550;
+    padding: 0;
+    color: white;
+}
+
+
+.mini-logo {
+    margin-top: -70px;
+    padding-top: 5px;
+    padding-left: 10px;
+    width: 80px;
+}
+
+.back-player-details {
+    text-align: left;
+    padding-right: 30px;
+    color: white;
+}
+
+.upcoming-games-section {
+    text-align: center;
+}
+
+.upcoming-games-title {
+    font-family: Arial;
+    font-size: 75px;
+    color: white;
+    font-weight: 700;
+    -webkit-text-stroke: 3px black;
+    margin: 15px;
+}
+
+
+
+/* Game Displays */
+.game-display {
+    position: relative;
+    display: inline-block;
+    flex-wrap: wrap;
+    border: 3px gray solid;
+    background-color: rgb(198, 198, 198);
+    border-radius: 20px;
+    width: 400px;
+    height: 220px;
+    margin: 10px;
+    transition: 0.4s all;
+}
+
+.game-img {
+    width: 150px;
+    transition: 0.3s all;
+}
+
+.game-img:hover {
+    transform: scale(1.1);
+}
+
+.game-side {
+    position: relative;
+    margin: 2px;
+    display: inline-block;
+    width: auto;
+}
+
+.game-side-visitor {
+    float: left;
+}
+
+.game-side-home {
+    float: right;
+}
+
+
+.game-score {
+    text-align: center;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.game-status {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin: 5;
+    font-family: Helvetica;
+    color: gray;
+    font-weight: 600;
+}
+
+.game-details img {
+    margin-top: 15px;
+    width: 20px;
+}
+
+.game-details {
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.reversed {
+    transform: rotateY(180deg);
+}
+
+.no-games {
+    margin-top: 100px;
+    font-size: 90px;
+    font-family: Helvetica;
+    font-weight: 750;
+    color: white;
+    -webkit-text-stroke: 3px black;
+}
