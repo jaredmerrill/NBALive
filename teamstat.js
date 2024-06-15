@@ -64,7 +64,7 @@ function convertTeamAbbrev(abbrev) {
 fetch(`https://api.balldontlie.io/v1/teams/${teamId}`,
     {
         headers: {
-            Authorization: "4a9ce398-c1f0-45a3-ae08-4fee03f2a41d",
+            Authorization: "4a9cXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         }
     })
     .then(response => response.json())
@@ -191,7 +191,7 @@ fetch(`https://api.balldontlie.io/v1/teams/${teamId}`,
             `
         }
         //get + display roster
-        fetch(`https://api.sportsdata.io/v3/nba/scores/json/Players/${convertTeamAbbrev(teamAbbrev)}?key=c8fb612145514e34a73bb87b7edcdc37`)
+        fetch(`https://api.sportsdata.io/v3/nba/scores/json/Players/${convertTeamAbbrev(teamAbbrev)}?key=c8fbXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`)
             .then(function (response) {
                 return response.json();
             })
@@ -230,24 +230,6 @@ fetch(`https://api.balldontlie.io/v1/teams/${teamId}`,
                         }
                     }
                 })
-                // card rotation animation
-                // roster.addEventListener("mousemove", function (e) {
-                //     const targetFrontPlayerDisplay = e.target.closest(".front-player-display");
-                //     if ([...playerFrontDisplays].includes(targetFrontPlayerDisplay)) {
-                //         const x = e.clientX - targetFrontPlayerDisplay.getBoundingClientRect().left;
-                //         const y = e.clientY - targetFrontPlayerDisplay.getBoundingClientRect().top;
-
-                //         targetFrontPlayerDisplay.style.transform = `perspective(400px) rotateX(${80 - (y * 0.3764705882)}deg) rotateY(${-60 + (x * 0.3680981595)}deg)`;
-
-
-                //     }
-                // })
-                // roster.addEventListener("mouseout", function (e) {
-                //     const targetFrontPlayerDisplay = e.target.closest(".front-player-display");
-                //     if ([...playerFrontDisplays].includes(targetFrontPlayerDisplay)) {
-                //         targetFrontPlayerDisplay.style.transform = ``;
-                //     }
-                // })
             })
 
 
@@ -293,7 +275,7 @@ fetch(`https://api.balldontlie.io/v1/teams/${teamId}`,
         }
         fetch(`https://api.balldontlie.io/v1/games/?start_date=${gamesSince(0)}&team_ids[]=${data.id}&per_page=100`, {
             headers: {
-                Authorization: "4a9ce398-c1f0-45a3-ae08-4fee03f2a41d"
+                Authorization: "4a9cXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
             },
         })
             .then(function (response) {
