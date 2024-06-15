@@ -164,7 +164,7 @@ function refreshGames() {
     fetch(recentGames,
         {
             headers: {
-                Authorization: "4a9ce398-c1f0-45a3-ae08-4fee03f2a41d"
+                Authorization: "4a9cXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
             },
         })
         .then(function (response) {
@@ -294,7 +294,7 @@ function refreshGames() {
             else if (date != "Upcoming") {
                 fetch(`https://api.balldontlie.io/v1/games/?dates[]=${date}`, {
                     headers: {
-                        Authorization: "4a9ce398-c1f0-45a3-ae08-4fee03f2a41d",
+                        Authorization: "4a9cXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
                     },
                 })
                     .then(function (response) {
@@ -600,7 +600,7 @@ function refreshGames() {
                     fetch(`https://api.balldontlie.io/v1/teams`, {
                         headers:
                         {
-                            Authorization: "4a9ce398-c1f0-45a3-ae08-4fee03f2a41d"
+                            Authorization: "4a9cXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
                         }
                     })
                         .then(function (response) {
@@ -628,7 +628,7 @@ let teamsArr = [];
 fetch(teams, {
     headers:
     {
-        Authorization: "4a9ce398-c1f0-45a3-ae08-4fee03f2a41d"
+        Authorization: "4a9cXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     }
 })
     .then(function (response) {
@@ -643,7 +643,7 @@ fetch(teams, {
 fetch(`https://api.balldontlie.io/v1/games?start_date=2023-10-01&per_page=50`, {
     headers:
     {
-        Authorization: "4a9ce398-c1f0-45a3-ae08-4fee03f2a41d"
+        Authorization: "4a9cXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     }
 })
     .then(function (response) {
