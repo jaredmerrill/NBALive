@@ -31,7 +31,7 @@ function convertTeamAbbrev(abbrev) {
 }
 function getPlayerID(name) {
     return new Promise((resolve, reject) => {
-        fetch(`https://api.sportsdata.io/v3/nba/scores/json/Players?key=c8fb612145514e34a73bb87b7edcdc37`)
+        fetch(`https://api.sportsdata.io/v3/nba/scores/json/Players?key=c8fbXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`)
             .then(function (response) {
                 return response.json();
             })
@@ -112,7 +112,7 @@ buttons.forEach(function (el) {
 fetch(gameUrl,
     {
         headers: {
-            Authorization: "4a9ce398-c1f0-45a3-ae08-4fee03f2a41d"
+            Authorization: "4a9cXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         },
     })
     .then(function (response) {
@@ -166,7 +166,7 @@ fetch(gameUrl,
         fetch(gameUrlStats,
             {
                 headers: {
-                    Authorization: "4a9ce398-c1f0-45a3-ae08-4fee03f2a41d"
+                    Authorization: "4a9cXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
                 },
             }
         )
@@ -268,7 +268,7 @@ fetch(gameUrl,
         })
 
 
-        fetch(`https://api.sportsdata.io/v3/nba/scores/json/GamesByDate/${gameDate}?key=c8fb612145514e34a73bb87b7edcdc37`)
+        fetch(`https://api.sportsdata.io/v3/nba/scores/json/GamesByDate/${gameDate}?key=c8fbXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`)
             .then(function (response) {
                 return response.json();
             })
@@ -282,7 +282,7 @@ fetch(gameUrl,
                     }
                 })
             })
-        fetch(`https://api.sportsdata.io/v3/nba/scores/json/GamesByDate/${gameDate}?key=c8fb612145514e34a73bb87b7edcdc37`)
+        fetch(`https://api.sportsdata.io/v3/nba/scores/json/GamesByDate/${gameDate}?key=c8fbXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`)
             .then(function (response) {
                 return response.json();
             })
